@@ -11,6 +11,5 @@ def hello_world():
     result = 1 + 2
     return f'1+2={result}'
 
-if __name__ == '__main__':
-    app.run()
+app.run()
 ```
