@@ -1,11 +1,12 @@
-**Question 1:** What does the acronym "API" stand for in the context of RESTful web services?
+```
+Question 1: What does the acronym "API" stand for in the context of RESTful web services?
 A) Application Programming Interface
 B) Advanced Protocol Integration
 C) Automated Protocol Interface
 D) Application Process Interface
 
-**Answer 1:** A) Application Programming Interface
-
+Answer 1: A) Application Programming Interface
+```
 **Question 2:** Which HTTP method is typically used to retrieve data from a RESTful API?
 A) GET
 B) POST
