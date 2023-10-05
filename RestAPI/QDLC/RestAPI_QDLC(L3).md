@@ -6,16 +6,16 @@ C) Automated Protocol Interface
 D) Application Process Interface
 
 Answer 1: A) Application Programming Interface
-```
-**Question 2:** Which HTTP method is typically used to retrieve data from a RESTful API?
+
+Question 2: Which HTTP method is typically used to retrieve data from a RESTful API?
 A) GET
 B) POST
 C) PUT
 D) DELETE
 
-**Answer 2:** A) GET
+Answer 2: A) GET
 
-**Question 3:** Which HTTP status code is returned when a resource is successfully created in a RESTful API?
+Question 3: Which HTTP status code is returned when a resource is successfully created in a RESTful API?
 A) 200 OK
 B) 201 Created
 C) 204 No Content
@@ -190,3 +190,4 @@ C) 404 Not Found
 D) 500 Internal Server Error
 
 **Answer 24:** B) 301 Moved Permanently
+```
