@@ -26,11 +26,11 @@ pip install Flask
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}My Flask App{% endblock %}</title>
+    <title>SimpleApp</title>
 </head>
 <body>
     <header>
-        <h1>{% block header %}Welcome to My Flask App{% endblock %}</h1>
+        <h1>SimpleApp</h1>
     </header>
     
     <nav>
@@ -41,7 +41,9 @@ pip install Flask
     </nav>
     
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+        
+        {% endblock %}
     </main>
 </body>
 </html>
@@ -55,9 +57,6 @@ In this template, you define several blocks (`title`, `header`, and `content`) t
 ```html
 {% extends "base.html" %}
 
-{% block title %}About Us - My Flask App{% endblock %}
-
-{% block header %}About Us{% endblock %}
 
 {% block content %}
     <h2>About Our Company</h2>
@@ -79,8 +78,8 @@ app = Flask(__name__)
 def home():
     return render_template('child.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
+app.run(debug=True)
 ```
 
 6. Run your Flask application:
