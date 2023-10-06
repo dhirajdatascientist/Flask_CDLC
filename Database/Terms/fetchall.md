@@ -1,0 +1,1 @@
+fetchall() is a method used in database programming to retrieve all the rows of data from a query result. It's typically used after executing a SQL query on a database.
