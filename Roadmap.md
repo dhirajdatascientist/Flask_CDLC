@@ -13,6 +13,8 @@
 5. Adding CSS
 6. Adding JS
 7. Folder Structure
+    - L1
+    - L2
 8. Adding Images
 9. RestAPI
     - CDLC
@@ -24,3 +26,14 @@
 10. Extends_Template
 11. Extends_Boilerplate
 12. Flask with Bootstrap
+13. Cheatsheet
+14. Database
+    - PDLC
+    - CDLC
+        - create_table(L1).md
+        - CRUD_CDLC(L1).md
+        - delete_CDLC(L1).md
+        - insert_data(L1).md
+        - select_data(L1).md
+15. CRUD Application Through HTML
+16. Status_Code
