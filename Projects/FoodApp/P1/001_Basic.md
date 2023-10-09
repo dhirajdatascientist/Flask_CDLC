@@ -1,4 +1,4 @@
-* Creating a "FoodApp" web application in Flask is relatively straightforward. 
+* Creating a "FoodApp" web application in Flask. 
 * Flask is a micro web framework for Python, and it makes it easy to build web applications. 
 * Here's a simple example of a "FoodApp" Flask application:
 
