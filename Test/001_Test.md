@@ -1,6 +1,8 @@
+```
 MCQ - 1 Mark Each
 COding Question - 5 Mark Each
 Time limit : 1 HR.
+```
 
 # Multiple-choice questions (MCQs) on Flask and SQL
 ```
