@@ -3,7 +3,7 @@ COding Question - 5 Mark Each
 Time limit : 1 HR.
 
 # Multiple-choice questions (MCQs) on Flask and SQL
-
+```
 Flask Questions:
 
 1. What is Flask?
@@ -188,6 +188,8 @@ SQL Questions:
     b) To delete an entire table
     c) To insert data into a table
     d) To update data in a table
+```
+
 
 # Coding questions
 
