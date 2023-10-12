@@ -1,4 +1,4 @@
-Certainly! Writing Python test cases using `pytest` is a straightforward process. Here's a basic guide on how to do it:
+Writing Python test cases using `pytest` 
 
 1. **Installation**:
    First, you'll need to install pytest:
