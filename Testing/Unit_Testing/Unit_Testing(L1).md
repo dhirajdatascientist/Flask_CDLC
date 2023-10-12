@@ -13,7 +13,7 @@
 
 
 
-## Importance of unit testing boiled down to 10 points:
+## Importance of unit testing:
 
 1. **Confidence**: Ensures that the code you wrote works correctly.
 2. **Safety Net**: Catches bugs early before they become bigger issues.
