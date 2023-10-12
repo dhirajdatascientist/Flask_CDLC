@@ -1,4 +1,4 @@
-### Simple Flask-WTForms Application Setup:
+### Flask-WTForms Application Setup:
 
 **1. Install dependencies**:
 ```bash
