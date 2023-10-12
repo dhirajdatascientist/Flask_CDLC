@@ -40,26 +40,51 @@ if __name__ == '__main__':
 
 #### Step 4: Test Your Service
 
-1. In your browser or using a tool like `curl`, you can access the service:
-   ```
-   http://localhost:5000/greet/John
-   ```
-   This should return "Hello, John!".
+1.Using `Postman`:
 
-#### Extending The Idea:
+- Download and install `Postman`.
+- Open `Postman`.
+- Click on `new`
+- Select `post`
+- To retrieve all tasks, 
+   - Set the request type to GET and enter the URL http://127.0.0.1:5001/tasks, then click "Send".
 
-In a real-world scenario, you might have multiple such services, possibly serving different functionalities. For instance, you could have a `user_service` for handling user data, `order_service` for processing orders, etc.
+- To add a new task, 
+   - Set the request type to POST
+   - Enter the URL http://127.0.0.1:5001/tasks, 
+   - Go to the "Body" tab
+   - Select "raw" and "JSON (application/json)", 
+   - and enter a JSON body like {"task": "Do laundry"}, 
+   - then click "Send".
 
-In the world of microservices, these services would communicate with each other, often over HTTP or some message broker (like RabbitMQ or Kafka).
 
-#### Things to Note:
+## To add multiple tasks without modifying the API:
 
-1. **Service Discovery**: In a microservices architecture, services need to discover each other. Tools like Consul, Eureka, or Kubernetes provide service discovery mechanisms.
-2. **API Gateway**: It's a common practice to have an API Gateway which acts as a single entry point into your system and routes the request to the appropriate microservice.
-3. **Data Consistency**: As services have their databases, maintaining data consistency across services can be challenging. This often involves patterns like Saga.
-4. **Monitoring & Logging**: With many services running, monitoring and logging become essential. Tools like Prometheus, Grafana, ELK Stack, etc., are popular in the microservices world.
+1. Using Postman:
+   
+   - Open Postman.
+   - Set the request type to POST.
+   - Enter the URL http://127.0.0.1:5001/tasks.
+   - Go to the "Body" tab, select "raw" and "JSON (application/json)".
+   
+   - To add the first task:
+     - Enter the JSON payload, for example, {"task": "Do laundry"}.
+     - Click "Send".
+   
+   - To add the second task:
+     - Change the payload, for instance, to {"task": "Buy groceries"}.
+     - Click "Send" again.
 
-**Suggestion**
-For beginners, starting with a Flask app as demonstrated above is a good step. As you become more familiar, you can start exploring the above concepts to **build more complex microservices-based applications**.
+   - Repeat the process for any additional tasks.
+
+2. Using the Collection Runner in Postman:
+   
+   If you want to automate the sending of multiple tasks in Postman, you can use the Collection Runner:
+
+   - Create a collection in Postman.
+   - Add your request to the collection.
+   - Use the Collection Runner to run the request multiple times, each time with a different task payload.
+
+This method uses the original API code without any modification. Each task is still being added with an individual POST request, but you're manually changing the payload for each one.
 
 Now let's go for Microservices(L3)
