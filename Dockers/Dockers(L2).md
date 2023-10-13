@@ -1,67 +1,202 @@
-### Prerequisite: Install Docker
-Ensure Docker is installed on your system. If not, download and install it from [Docker's official site](https://www.docker.com/products/docker-desktop).
+## Dockers(L1)
 
-### Step 1: Create a Simple Flask Application
-#### 1.1 Setup a new directory
-Create a new directory for your project and navigate into it:
-```shell
-mkdir myflaskapp
-cd myflaskapp
-```
-#### 1.2 `app.py`
-Create a file named `app.py` with the following content:
-```python
-from flask import Flask
+1. **Question 1:**
+   What is Docker?
+   A. Programming Language
+   B. Containerization Platform
+   C. Web Browser
+   D. Operating System
+   
+   **Answer: B. Containerization Platform**
+   Docker provides a platform to develop, ship, and run applications inside containers.
 
-app = Flask(__name__)
+2. **Question 2:**
+   Docker uses which technology for containerization?
+   A. Virtualization
+   B. Emulation
+   C. Compilation
+   D. Interpretation
+   
+   **Answer: A. Virtualization**
+   Docker uses OS-level virtualization to allow multiple containers to run on the same OS kernel.
 
-@app.route('/')
-def hello_world():
-    return 'Hello, Docker!'
+3. **Question 3:**
+   Which command is used to run a container in Docker?
+   A. docker run
+   B. docker execute
+   C. docker start
+   D. docker initiate
+   
+   **Answer: A. docker run**
+   The `docker run` command is used to create and start a container in Docker.
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
-```
-#### 1.3 `requirements.txt`
-Create a file named `requirements.txt`:
-```plaintext
-Flask==2.0.2
-```
+4. **Question 4:**
+   What is the purpose of Dockerfile?
+   A. To create containers
+   B. To define the configuration for creating a Docker image
+   C. To run Docker containers
+   D. To network Docker containers
+   
+   **Answer: B. To define the configuration for creating a Docker image**
+   Dockerfile contains a set of instructions used to create a Docker image.
 
-### Step 2: Create a Dockerfile
-#### 2.1 Create Dockerfile
-In the same directory, create a file named `Dockerfile`:
-```dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY . /app
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
-EXPOSE 5000
-ENV NAME DockerFlask
-CMD ["python", "app.py"]
-```
+5. **Question 5:**
+   Which command is used to build a Docker image?
+   A. docker build
+   B. docker create
+   C. docker compile
+   D. docker make
+   
+   **Answer: A. docker build**
+   `docker build` creates Docker images from a Dockerfile and a context.
 
-### Step 3: Build Docker Image and Run the Container
-#### 3.1 Open Terminal
-Navigate to the directory containing `app.py`, `requirements.txt`, and `Dockerfile` in your terminal.
+6. **Question 6:**
+   Which of the following is a Docker orchestration tool?
+   A. Kubernetes
+   B. Git
+   C. Jenkins
+   D. Maven
+   
+   **Answer: A. Kubernetes**
+   Kubernetes is used to manage and orchestrate Docker containers at scale.
 
-#### 3.2 Build Docker Image
-```shell
-docker build -t myflaskapp .
-```
-#### 3.3 Run Docker Container
-```shell
-docker run -p 5000:5000 myflaskapp
-```
-### Step 4: Access the Flask App in Browser
-#### 4.1 Open Browser
-Navigate to [http://localhost:5000/](http://localhost:5000/). You should see "Hello, Docker!" on the webpage.
+7. **Question 7:**
+   Which command pulls an image from Docker Hub?
+   A. docker download
+   B. docker get
+   C. docker pull
+   D. docker fetch
+   
+   **Answer: C. docker pull**
+   `docker pull` downloads a Docker image from a registry like Docker Hub.
 
-### Additional Notes:
-- **Troubleshooting Docker:** Ensure Docker is running before executing Docker commands.
-- **Flask Version:** Update the Flask version in `requirements.txt` as needed.
-- **App Error Checking:** Confirm your app runs without errors in a local environment before Dockerizing.
-- **Security and Production:** This setup is not production-ready. For deployment, use a production WSGI server, such as Gunicorn, and implement additional security practices.
+8. **Question 8:**
+   Docker Compose uses which file format?
+   A. JSON
+   B. YAML
+   C. XML
+   D. HTML
+   
+   **Answer: B. YAML**
+   Docker Compose utilizes YAML files to define multi-container Docker applications.
 
-### Conclusion
-This step-by-step guide allows you to Dockerize a basic Flask application. For larger applications or deployment, additional configurations and optimizations will be necessary.
+9. **Question 9:**
+   Which Docker networking type connects Docker containers across multiple hosts?
+   A. Bridge
+   B. Host
+   C. Overlay
+   D. None
+   
+   **Answer: C. Overlay**
+   Overlay networks connect multiple Docker daemons and enable swarm services to communicate.
+
+10. **Question 10:**
+    Which Docker command lists all running containers?
+    A. docker ps
+    B. docker ls
+    C. docker show
+    D. docker list
+   
+    **Answer: A. docker ps**
+    `docker ps` provides information regarding all the running Docker containers.
+
+11. **Question 11:**
+    What does the `docker exec` command do?
+    A. Creates a new container
+    B. Execute a command in a running container
+    C. Stops a container
+    D. Builds an image
+   
+    **Answer: B. Execute a command in a running container**
+    `docker exec` is used to run commands in a running Docker container.
+
+12. **Question 12:**
+    Which Docker command is used to stop a running container?
+    A. docker pause
+    B. docker terminate
+    C. docker stop
+    D. docker kill
+   
+    **Answer: C. docker stop**
+    `docker stop` is used to stop a running container.
+
+13. **Question 13:**
+    How can you persist data generated by Docker containers?
+    A. Using DockerFiles
+    B. Using Volumes
+    C. Using Images
+    D. Using Tags
+   
+    **Answer: B. Using Volumes**
+    Docker Volumes are used to persist data generated and used by Docker containers.
+
+14. **Question 14:**
+    Which command is used to remove a Docker image?
+    A. docker rm image
+    B. docker rmi
+    C. docker del
+    D. docker remove
+   
+    **Answer: B. docker rmi**
+    `docker rmi` removes one or more selected images.
+
+15. **Question 15:**
+    Which of the following can be used to automate the deployment of applications inside lightweight, portable containers?
+    A. Docker Swarm
+    B. Docker Hub
+    C. Docker File
+    D. Docker Engine
+   
+    **Answer: A. Docker Swarm**
+    Docker Swarm is a container orchestration platform and is native clustering for Docker.
+
+16. **Question 16:**
+    What is the default registry for Docker?
+    A. Docker Repository
+    B. Docker Hub
+    C. Docker Store
+    D. Docker Cloud
+   
+    **Answer: B. Docker Hub**
+    Docker Hub is a cloud-based registry service that allows you to link code repositories, build images, and store them.
+
+17. **Question 17:**
+    What is Docker Daemon?
+    A. A CLI tool for Docker
+    B. A GUI for Docker
+    C. A background process that manages Docker containers
+    D. A Docker image registry
+   
+    **Answer: C. A background process that manages Docker containers**
+    Docker Daemon is a persistent background process that manages Docker containers.
+
+18. **Question 18:**
+    Which command shows the logs of a Docker container?
+    A. docker view
+    B. docker logs
+    C. docker showlogs
+    D. docker inspect
+   
+    **Answer: B. docker logs**
+    `docker logs` fetch the logs of a container.
+
+19. **Question 19:**
+    Which of the following file is automatically created when Docker is installed?
+    A. Docker.conf
+    B. Dockerfile
+    C. Daemon.json
+    D. Docker.json
+   
+    **Answer: C. Daemon.json**
+    `Daemon.json` contains configurations for the Docker Daemon.
+
+20. **Question 20:**
+    Which Docker command shows information about system resource usage?
+    A. docker stats
+    B. docker info
+    C. docker system
+    D. docker resources
+   
+    **Answer: A. docker stats**
+    `docker stats` displays a live stream of container(s) resource usage statistics.
+
