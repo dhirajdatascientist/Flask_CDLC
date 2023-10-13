@@ -54,6 +54,29 @@ def admin():
 * HTTP authentication is employed.
 * Invalid or absent credentials lead to an "Access Denied" message and a 403 status code.
 
+* Complete Code
+```
+from flask import Flask, request, Response
+
+app = Flask(__name__)
+
+def check_auth(username, password):
+    return username == 'admin' and password == 'secret'
+
+@app.route('/admin')
+def admin():
+    auth = request.authorization
+    
+    if not auth or not check_auth(auth.username, auth.password):
+        return Response('Access Denied', 403, {'WWW-Authenticate': 'Basic realm="Login required!"'})
+    
+    return "Admin page!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+
 ### 6. Retrieve User Agent Info
 ```python
 @app.route('/browser-info')
