@@ -55,7 +55,7 @@ def admin():
 * Invalid or absent credentials lead to an "Access Denied" message and a 403 status code.
 
 * Complete Code
-```
+```python
 from flask import Flask, request, Response
 
 app = Flask(__name__)
