@@ -1,8 +1,5 @@
 # FlaskWorld
-
-
 ## Roadmap
-# RoadMap of Flask
 
 1. Introduction
     - CDLC
