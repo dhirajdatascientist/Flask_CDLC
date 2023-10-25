@@ -1,6 +1,6 @@
 |  #  | Task                                                     | Status |
 |-----|----------------------------------------------------------|--------|
-|  1  | [Setup(L1)](Setup/Setup(L1).md)                           |✅|
+|  1  | [Setup(L1)](P1/Setup/Setup(L1).md)                           |✅|
 |  2  | [Templates(L1)](Templates/Templates(L1).md)               |✅|
 |  3  | [Bootstrap(L1)](Bootstrap/Bootstrap(L1).md)               |✅|
 |  4  | [Navbar(L1)](Navbar/Navbar(L1).md)                        |✅|
