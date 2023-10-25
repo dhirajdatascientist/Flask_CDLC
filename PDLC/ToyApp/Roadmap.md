@@ -9,3 +9,5 @@
 |  7  | [Adding Products(L2)](P1/Adding_Products/Products(L2).md) |✅|
 |  8  | [Add to Cart Button(L1)](P1/Add_to_cart_button/Add_to_cart_button(L1).md) |✅|
 |  9  | [Login Page(L1)](P1/Login_Page/Login(L1).md)                 |✅|
+|  10  | [Rating(L1)](P1/Rating/Rating(L1).md)                 |✅|
+|  11  | [Reviews(L1)](P1/Reviews/Reviews(L1).md)                 |✅|
